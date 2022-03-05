@@ -8,6 +8,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: '[name].bundle.js',
+        assetModuleFilename: 'assets/images/[name][ext]'
     },
     plugins: [
         new HTMLWebpackPlugin({
@@ -32,7 +33,19 @@ module.exports = {
             test   : /\.scss$/,
             exclude: /node_modules/,
             use: ['style-loader', 'css-loader', 'sass-loader']
-          }
+          },
+          {
+            test: /\.(png|svg|jpg|jpeg|gif)$/,
+            type: 'asset/resource',
+          },
+          {
+            test: /\.(woff2?|eot|ttf|otf)$/,
+            type: 'asset/resource',
+          },
+          {
+            test: /\.html$/,
+            use: 'html-loader'
+        },
         ]
       }
 }
