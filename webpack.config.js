@@ -18,8 +18,21 @@ module.exports = {
         port: 8000,
         historyApiFallback: true,
         hot: true,
-    }
-
-
-
+    },
+    module: {
+        rules: [
+        //   {
+        //     test: /\.css$/,
+        //     include: [
+        //       path.join(__dirname, 'src')
+        //     ],
+        //     use: ['style-loader', 'css-loader']
+        //   },
+          {
+            test   : /\.scss$/,
+            exclude: /node_modules/,
+            use: ['style-loader', 'css-loader', 'sass-loader']
+          }
+        ]
+      }
 }
