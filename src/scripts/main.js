@@ -1,1 +1,1 @@
-console.log("Hi!")
+console.log("main.js is working")
