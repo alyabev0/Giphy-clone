@@ -27,3 +27,12 @@ window.getData = getData
 window.check = () => {console.log("this func is working")};
 // window.getData = getData
 var btn = $("#2");
+
+$(document).ready(function() {
+    $('input').keydown(function(e) {
+      if(e.keyCode === 13) {
+        console.log("works");
+        getData();
+      }
+    });
+  });
