@@ -1,5 +1,5 @@
-import "./styles/main.scss"
 
+import "./styles/main.scss"
 import $ from "jquery"
 
 console.log("index.js is working")
@@ -10,7 +10,7 @@ function getData(){
 
     $(".inner").empty()
 
-    var input = $("#1").val()
+var input = $("#1").val()
 var first = $.get("http://api.giphy.com/v1/gifs/search?q="+input+"+&api_key=AM9Uhu5x5a9UXJUcGq8afp9ukWCApq8x&limit=32");
 first.done(function(response){
     console.log("success got data", response);
@@ -26,7 +26,7 @@ for ( i in jiffs)
 window.getData = getData
 window.check = () => {console.log("this func is working")};
 // window.getData = getData
-var btn = $("#2");
+
 
 $(document).ready(function() {
     $('input').keydown(function(e) {
@@ -36,3 +36,5 @@ $(document).ready(function() {
       }
     });
   });
+
+  //cooking category - https://api.giphy.com/v1/gifs/categories/actions/cooking?+&api_key=AM9Uhu5x5a9UXJUcGq8afp9ukWCApq8x&limit=32 
