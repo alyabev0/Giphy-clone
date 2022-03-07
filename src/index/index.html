@@ -7,14 +7,33 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <div class="wrapper">
-        <!-- <form action="submit" id="0" class="search-form" onsubmit="getData()"> -->
-            <div class="search-form">
-            <input type="search" id = "1" class="search-search" placeholder="Enter something...">
-            <input type="button" id = "2" class="search-button" value="Кнопка" onclick="getData()"> <!--раньше type был submit -->
+    <header class="header">
+        <div class="header__logo">
+            <div class="header__logo-1">
+                <img src="../assets/images/giphy.jpg">
+            </div>
+            <div class="header__logo-2"></div>
+            <div class="header__logo-text">GIPHY</div>
         </div>
-        <!-- </form> -->
+        <nav class="buttons">
+            <div class="buttons__button">Anime</div>
+            <div class="buttons__button">Sports</div>
+            <div class="buttons__button">Nature</div>
+            <div class="buttons__button">Science</div>
+            <div class="buttons__button">Cars</div>
+        </nav>
+    </header>
+    
+    <div class="search-wrapper">
+        
+            <div class="search-form">
+            <input type="search" id = "1" class="search-search" placeholder="Введите запрос...">
+            <input type="button" id = "2" class="search-button" onclick="getData()"> <!--раньше type был submit -->
+        </div>
+
+        <!-- <img src="https://media.giphy.com/headers/2021-11-11-23-1636647787/HOLIDAY_BANNER_MOBILE-2021.gif" alt="All of the Holiday GIFs!"> -->
+        
+
     <div class="inner"></div>
     </div>
     <script src="../scripts/main.js"></script>
