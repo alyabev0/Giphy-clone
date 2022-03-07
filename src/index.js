@@ -6,6 +6,14 @@ console.log("index.js is working")
 
 var first = ""
 
+//очистка input после перезагрузки
+function loadingWindow() {
+  window.onload = console.log("loadingWindow() is working")
+  document.getElementById('1').value = ""
+}
+window.loadingWindow = loadingWindow
+window.addEventListener("load", loadingWindow)
+
 function getData(){
 
     $(".inner").empty()
@@ -25,7 +33,7 @@ for ( i in jiffs)
 })};
 window.getData = getData
 window.check = () => {console.log("this func is working")};
-// window.getData = getData
+
 
 
 $(document).ready(function() {
