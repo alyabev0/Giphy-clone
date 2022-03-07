@@ -40,15 +40,17 @@ body{
 }
 //buttons
 .buttons{
+    width: 55%;
     display: flex;
     align-items: center;
-    margin-left: 9%;
+    margin-left: 7%;
+    justify-content: space-between;
 }
 .buttons__button{
     cursor: pointer;
     color: white;
     border-radius: 2px;
-    margin-left: 8%;
+    // margin-left: 8%;
     font-weight: 700;
     font-size: 17px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -93,7 +95,7 @@ body{
     cursor: pointer;
     margin: 0 5px;
     height: 50%;
-    width: 3.3%;
+    width: 50px;
     min-width: 20px;
     font-weight: 500;
     font-size: 15px;
@@ -118,7 +120,7 @@ body{
    0 2px 3px rgba(0,0,0,.5) inset,
    0 1px 1px rgba(255,255,255,.1);
   }
-
+//content
   .content{
       background-color: black;
       min-height: 99.25px;
@@ -135,4 +137,7 @@ body{
       object-fit: cover;
       object-position: center;
         border-radius: 2px;
+  }
+
+  .inner{
   }

@@ -42,7 +42,7 @@ var jiffs = response.data
 var i = "";
 for ( i in jiffs)
 {
-    $('.inner').append("<img src='"+jiffs[i].images.original.url+"' style ='height:350px; width:350px; margin-top: 0px;'/>")
+    $('.inner').append("<img src='"+jiffs[i].images.original.url+"' style ='height:325px; width:325px;  margin-top: 0px;'/>") //height:350px; width:350px; 
 }
 })};
 window.getData = getData
