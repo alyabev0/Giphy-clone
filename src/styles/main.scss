@@ -42,7 +42,7 @@
 .buttons__button{
     cursor: pointer;
     color: white;
-    margin-left: 0.75%;
+    margin-left: 8%;
     font-weight: 700;
     font-size: 17px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -102,3 +102,15 @@
    0 1px 1px rgba(255,255,255,.1);
   }
 
+  .content-banner{
+      width: 70%;
+      height: 20vh;
+      min-height: 96px;
+      margin: 0 auto;
+  }
+  .banner img{
+        width: 100%;
+      object-fit: cover;
+      object-position: center;
+
+  }

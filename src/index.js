@@ -14,11 +14,25 @@ function loadingWindow() {
 window.loadingWindow = loadingWindow
 window.addEventListener("load", loadingWindow)
 
-function getData(){
-
+function getData(n){
+//очистка блока с гифками
     $(".inner").empty()
+    var input = $("#1").val()
 
-var input = $("#1").val()
+    //механизм сортировки по поиску
+if (n == 1){
+  console.log('cock')
+  var input = "Anime";
+} else if (n == 2) {
+  var input = "Sports";
+} else if (n == 3) {
+  var input = "Nature";
+} else if (n == 4) {
+  var input = "Science";
+} else if (n == 5) {
+  var input = "Cars";
+}
+ 
 var first = $.get("http://api.giphy.com/v1/gifs/search?q="+input+"+&api_key=AM9Uhu5x5a9UXJUcGq8afp9ukWCApq8x&limit=32");
 first.done(function(response){
     console.log("success got data", response);

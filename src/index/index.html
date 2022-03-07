@@ -16,11 +16,11 @@
             <div class="header__logo-text">GIPHY</div>
         </div>
         <nav class="buttons">
-            <div class="buttons__button" onclick="">Sports</div>
-            <div class="buttons__button">Sports</div>
-            <div class="buttons__button">Nature</div>
-            <div class="buttons__button">Science</div>
-            <div class="buttons__button">Cars</div>
+            <div class="buttons__button" onclick="getData(1)">Anime</div>
+            <div class="buttons__button" onclick="getData(2)">Sports</div>
+            <div class="buttons__button" onclick="getData(3)">Nature</div>
+            <div class="buttons__button" onclick="getData(4)">Science</div>
+            <div class="buttons__button" onclick="getData(5)">Cars</div>
         </nav>
     </header>
     
@@ -30,12 +30,13 @@
             <input type="search" id = "1" class="search-search" placeholder="Введите запрос...">
             <input type="button" id = "2" class="search-button" onclick="getData()"> <!--раньше type был submit -->
         </div>
-
-        <!-- <img src="https://media.giphy.com/headers/2021-11-11-23-1636647787/HOLIDAY_BANNER_MOBILE-2021.gif" alt="All of the Holiday GIFs!"> -->
-        
+        <div class="content">
+        <div class="content-banner">
+        <img src="https://media.giphy.com/headers/2019-02-28-42-1551397358/whm-banner-web.gif" alt="All of the Women's History Month GIFs">
+        </div>
 
     <div class="inner"></div>
-    </div>
+    </div></div>
     <script src="../scripts/main.js"></script>
 </body>
 </html>
