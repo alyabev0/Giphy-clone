@@ -21,7 +21,7 @@ function getData(n){
 
     //механизм сортировки по поиску
 if (n == 1){
-  console.log('cock')
+  console.log('sorting works')
   var input = "Anime";
 } else if (n == 2) {
   var input = "Sports";
@@ -33,16 +33,21 @@ if (n == 1){
   var input = "Cars";
 }
  
-var first = $.get("http://api.giphy.com/v1/gifs/search?q="+input+"+&api_key=AM9Uhu5x5a9UXJUcGq8afp9ukWCApq8x&limit=32");
+var pagIndex = 0
+
+var first = $.get("http://api.giphy.com/v1/gifs/search?q="+input+"+&api_key=AM9Uhu5x5a9UXJUcGq8afp9ukWCApq8x&limit=10&offset="+pagIndex+"");
 first.done(function(response){
     console.log("success got data", response);
+
+    //http://api.giphy.com/v1/gifs/search?q="+input+"+&api_key=AM9Uhu5x5a9UXJUcGq8afp9ukWCApq8x&limit=32&offset=32
+
 
 
 var jiffs = response.data
 var i = "";
 for ( i in jiffs)
 {
-    $('.inner').append("<img src='"+jiffs[i].images.original.url+"' style ='height:325px; width:325px;  margin-top: 0px;'/>") //height:350px; width:350px; 
+    $('.inner').append("<img src='"+jiffs[i].images.original.url+"' class='inner-image' style ='margin-top: 0px;'/>") //height:350px; width:350px; 
 }
 })};
 window.getData = getData
