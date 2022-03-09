@@ -102,6 +102,8 @@ $(document).ready(function() {
         $(".inner").empty()
         $(".reload").empty()
 
+
+    //если в строке поиска что-то есть, инпут это получает это
         if (document.getElementById(1).value) {
           console.log(document.getElementById(1).value)
           var input = $("#1").val()
@@ -110,19 +112,54 @@ $(document).ready(function() {
     if (n == 1){
       console.log('sorting works')
       var input = "Anime";
+      document.getElementById(1).value = ""
+      localStorage.clear();
+      localStorage.setItem('Anime', 1);
+      console.log(localStorage)
       // document.getElementById(1).value = "Anime"   --- с этой строкой все работает
     } else if (n == 2) {
       var input = "Sports";
+      document.getElementById(1).value = ""
+      localStorage.clear();
+      localStorage.setItem('Sports', 1);
+      console.log(localStorage)
     } else if (n == 3) {
       var input = "Nature";
+      document.getElementById(1).value = ""
+      localStorage.clear();
+      localStorage.setItem('Nature', 1);
+      console.log(localStorage)
     } else if (n == 4) {
       var input = "Science";
+      document.getElementById(1).value = ""
+      localStorage.clear();
+      localStorage.setItem('Science', 1);
+      console.log(localStorage)
     } else if (n == 5) {
       var input = "Cars";
+      document.getElementById(1).value = ""
+      localStorage.clear();
+      localStorage.setItem('Cars', 1);
+      console.log(localStorage)
     } else if (n == 15) {
       pagIndex = pagIndex + 15
       console.log(pagIndex)
     };
+
+
+
+    if (localStorage.Anime == 1) {
+      input = "Anime" 
+    } else if (localStorage.Sports == 1) {
+      input = "Sports"
+    } else if (localStorage.Nature == 1) {
+      input = "Nature"
+    } else if (localStorage.Science == 1) {
+      input = "SCience"
+    } else if (localStorage.Cars == 1) {
+      input = "Cars"
+    } 
+    
     var first = $.get("http://api.giphy.com/v1/gifs/search?q="+input+"+&api_key=AM9Uhu5x5a9UXJUcGq8afp9ukWCApq8x&limit=15&offset="+pagIndex+"");
     first.done(function(response){
         console.log("success got data", response);
