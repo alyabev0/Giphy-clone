@@ -103,7 +103,7 @@ $(document).ready(function() {
       input = "Cars"
     } 
     //получение данных с API методом GET
-    var first = $.get("http://api.giphy.com/v1/gifs/search?q="+input+"+&api_key=AM9Uhu5x5a9UXJUcGq8afp9ukWCApq8x&limit=15&offset="+pagIndex+"");
+    var first = $.get("https://api.giphy.com/v1/gifs/search?q="+input+"+&api_key=AM9Uhu5x5a9UXJUcGq8afp9ukWCApq8x&limit=15&offset="+pagIndex+"");
     first.done(function(response){
         console.log("success got data", response);
     
