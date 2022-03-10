@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "css-loader": "^6.7.0",
+    "eslint": "^8.10.0",
     "html-loader": "^3.1.0",
     "jquery": "^3.6.0",
     "style-loader": "^3.3.1",
