@@ -137,12 +137,28 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 25px 0;
     max-width: 1200px;
-    margin-left: 11%;
+    // margin-left: 11%;
+    margin: 0 auto;
   }
   .inner-image{
     width: 200px;
     height: 200px;
     border-radius: 4px;
+  }
+  @media (max-width: 1024px) {
+    .inner-image {
+        width: 140px;
+        height: 140px;
+    }
+  }
+  @media (max-width: 785px) {
+    .inner{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .inner-image {
+        width: 80px;
+        height: 80px;
+    }
   }
 //reload
 .reload{
