@@ -24,7 +24,7 @@
 
 Клонируем репозиторий
 ```
-git clone https://github.com/alyabev0/Metalamp.git
+git clone https://github.com/alyabev0/Giphy-clone
 ```
 Установка проекта
 ```
