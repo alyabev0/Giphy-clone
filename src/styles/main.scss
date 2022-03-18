@@ -13,6 +13,61 @@ body{
     justify-content: flex-start;
 
 }
+  /* Меню бокового бара */
+  .sidebar {
+    height: 100%; /* 100% Полный рост */
+    width: 0; /* 0 ширина - измените это с помощью JavaScript */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Оставайтесь на вершине */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Черный */
+    overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+    padding-top: 60px; /* Поместите содержимое 60px сверху */
+    transition: 0.5s; /* 0.5 секунд эффект перехода для скольжения в боковой панели */
+  }
+  /* На боковой панели */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  /* При наведении курсора мыши на навигационные ссылки измените их цвет */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  /* Положение и стиль кнопки закрытия (верхний правый угол) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  /* Кнопка для открытия бокового бара */
+  .openbtn {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 8px 13px;
+    border: none;
+    height: 100%;
+    width: 100px;
+    right: 0;
+  }
+  .openbtn:hover {
+    background-color: #444;
+  }
+  #main, #mySidebar{
+    display: none;
+}
 
 //logo
 .header__logo{
@@ -178,110 +233,10 @@ body{
 .reload-button:hover {
     background: rgba(36, 35, 35, 0) linear-gradient(45deg, rgb(98, 19, 177) 0%, rgb(165, 52, 52) 100%) repeat scroll 0% 0%;
   }
-  
   .reload-button:active {
     outline: none;
     box-shadow:
    0 0 1px rgba(0,0,0,.5) inset,
    0 2px 3px rgba(0,0,0,.5) inset,
    0 1px 1px rgba(255,255,255,.1);
-  }
-
-
-  /* Меню бокового бара */
-.sidebar {
-    height: 100%; /* 100% Полный рост */
-    width: 0; /* 0 ширина - измените это с помощью JavaScript */
-    position: fixed; /* Оставаться на месте */
-    z-index: 1; /* Оставайтесь на вершине */
-    top: 0;
-    right: 0;
-    background-color: #111; /* Черный */
-    overflow-x: hidden; /* Отключить горизонтальную прокрутку */
-    padding-top: 60px; /* Поместите содержимое 60px сверху */
-    transition: 0.5s; /* 0.5 секунд эффект перехода для скольжения в боковой панели */
-  }
-  
-  /* На боковой панели */
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  /* При наведении курсора мыши на навигационные ссылки измените их цвет */
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Положение и стиль кнопки закрытия (верхний правый угол) */
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  /* Кнопка для открытия бокового бара */
-  .openbtn {
-    font-size: 24px;
-    cursor: pointer;
-    background-color: black;
-    color: white;
-    padding: 8px 13px;
-    border: none;
-    height: 100%;
-    width: 100px;
-    right: 0;
-  }
-  
-  .openbtn:hover {
-    background-color: #444;
-  }
-  
-  /* Стиль содержимого страницы - используйте это, если вы хотите переместить содержимое страницы вправо при открытии боковой навигации */
-//   #main {
-    /* transition: margin-left 0.5s; Если вы хотите эффект перехода
-    padding: 20px; */
-    
-//   }
-  
-
-  #main, #mySidebar{
-    display: none;
-}
-@media (max-width: 1082px) {
-    .inner-image {
-        width: 140px;
-        height: 140px;
-    }
-  }
-  @media (max-width: 785px) {
-    #main, #mySidebar{
-        display: block;
-    }
-    .header__buttons{
-        display:none;
-    }
-    .content__banner{
-          width: 85%;
-      }
-    .inner{
-        margin-top: 0;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .inner-image {
-        width: 100px;
-        height: 100px;
-    }
-    .header{
-        justify-content: space-between;
-    }
   }
