@@ -11,20 +11,19 @@ body{
     display: flex;
     background-color: black;
     justify-content: flex-start;
-
 }
   /* Меню бокового бара */
   .sidebar {
-    height: 100%; /* 100% Полный рост */
-    width: 0; /* 0 ширина - измените это с помощью JavaScript */
-    position: fixed; /* Оставаться на месте */
-    z-index: 1; /* Оставайтесь на вершине */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111; /* Черный */
-    overflow-x: hidden; /* Отключить горизонтальную прокрутку */
-    padding-top: 60px; /* Поместите содержимое 60px сверху */
-    transition: 0.5s; /* 0.5 секунд эффект перехода для скольжения в боковой панели */
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
   }
   /* На боковой панели */
   .sidebar a {
