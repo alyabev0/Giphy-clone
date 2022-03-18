@@ -28,6 +28,22 @@
             <div class="buttons__button" onclick="getData(4)">Science</div>
             <div class="buttons__button" onclick="getData(5)">Cars</div>
         </nav>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <a onclick="getData(1), closeNav()">Anime</a>
+            <a onclick="getData(2), closeNav()">Sports</a>
+            <a onclick="getData(3), closeNav()">Nature</a>
+            <a onclick="getData(4), closeNav()">Science</a>
+            <a onclick="getData(5), closeNav()">Cars</a>
+          </div>
+      
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">
+              &#9776; 
+            </button>
+          </div>
     </header>
     
     <div class="search-wrapper">
