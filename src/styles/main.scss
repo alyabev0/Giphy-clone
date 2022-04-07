@@ -4,7 +4,6 @@ a {
 body{
     background-color: black;
 }
-// header
 .header{
     width: 100%;
     height: 15vh;
@@ -12,7 +11,6 @@ body{
     background-color: black;
     justify-content: flex-start;
 }
-  /* Меню бокового бара */
   .sidebar {
     height: 100%;
     width: 0;
@@ -25,7 +23,6 @@ body{
     padding-top: 60px;
     transition: 0.5s;
   }
-  /* На боковой панели */
   .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -37,11 +34,9 @@ body{
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-  /* При наведении курсора мыши на навигационные ссылки измените их цвет */
   .sidebar a:hover {
     color: #f1f1f1;
   }
-  /* Положение и стиль кнопки закрытия (верхний правый угол) */
   .sidebar .closebtn {
     position: absolute;
     top: 0;
@@ -49,7 +44,6 @@ body{
     font-size: 36px;
     margin-left: 50px;
   }
-  /* Кнопка для открытия бокового бара */
   .openbtn {
     font-size: 24px;
     cursor: pointer;
@@ -67,8 +61,6 @@ body{
   #main, #mySidebar{
     display: none;
 }
-
-//logo
 .header__logo{
     display: flex;
     align-items: center;
@@ -92,7 +84,6 @@ body{
     height: 100%;
     object-fit: contain;
 }
-//buttons
 .header__buttons{
     width: 55%;
     display: flex;
@@ -104,7 +95,6 @@ body{
     cursor: pointer;
     color: white;
     border-radius: 2px;
-    // margin-left: 8%;
     font-weight: 700;
     font-size: 17px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -116,7 +106,6 @@ body{
     background: linear-gradient(45deg, #6157ff, #7e48cd);
 }
 }
-//search
 .search-wrapper{
     width: 100%;
     height: 12vh;
@@ -154,7 +143,6 @@ body{
     border: 0;
     background-image: url("../assets/images/search.svg");
     border-radius: 4px;
-    
     background: rgba(0, 0, 0, 0) linear-gradient(45deg, rgb(153, 51, 255) 0%, rgb(255, 102, 102) 100%) repeat scroll 0% 0%;   
 }
 .search-button:hover {
@@ -167,7 +155,6 @@ body{
    0 2px 3px rgba(0,0,0,.5) inset,
    0 1px 1px rgba(255,255,255,.1);
   }
-//content
   .content{
       background-color: black;
       min-height: 99.25px;
@@ -175,11 +162,9 @@ body{
       flex-direction: column;
       align-items: center;
   }
-
   .content__banner{
       width: 71%;
       height: 23vh;
-    //   margin: 0 auto;
   }
   .content__banner img{
         width: 100%;
@@ -187,15 +172,12 @@ body{
       object-position: center;
         border-radius: 2px;
   }
-//Where Gifs from API upload
   .inner{
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 25px 0;
     max-width: 1200px;
-    // margin-left: 11%;
-    // margin: 0 auto;
   }
   .inner-image{
     width: 200px;
@@ -203,8 +185,6 @@ body{
     border-radius: 4px;
     margin: 0 10px 0 10px;
   }
-  
-//reload
 .reload{
     margin-top: 20px;
     display: flex;
@@ -213,18 +193,14 @@ body{
     height: 4em;
 }
 .reload-button{
-        
         cursor: pointer;
         margin-bottom: 20px;
-        // height: 50px;
-        // width: 30%;
         width: 100%;
         min-width: 50px;
         font-weight: 600;
         font-size: 15px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: white;
-        // outline: none;
         border: 0;
         border-radius: 4px;
         background: rgba(0, 0, 0, 0) linear-gradient(45deg, rgb(153, 51, 255) 0%, rgb(255, 102, 102) 100%) repeat scroll 0% 0%;   
